@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://www.torie.top/tags/index.html</loc>
+    
+    <lastmod>2017-11-16T14:10:05.338Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.torie.top/categories/index.html</loc>
+    
+    <lastmod>2017-11-16T14:10:05.337Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.torie.top/about/index.html</loc>
+    
+    <lastmod>2017-11-16T14:10:05.336Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.torie.top/2017/11/16/hello-world/</loc>
+    
+    <lastmod>2017-11-16T14:10:05.335Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.torie.top/2017/11/09/My-First-Post-with-hexo/</loc>
+    
+    <lastmod>2017-11-16T14:10:05.335Z</lastmod>
+    
+  </url>
+  
+</urlset>
