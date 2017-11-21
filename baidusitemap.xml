@@ -7,6 +7,21 @@
     
     
   <url>
+    <loc>http://www.torie.top/2017/11/09/My-First-Post-with-hexo/</loc>
+    <lastmod>2017-11-16T14:10:05.335Z</lastmod>
+    <data>
+        <display>
+        <title>My First Post with hexo</title>
+        <pubTime>2017-11-09T08:15:23.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.torie.top/2017/11/16/hello-world/</loc>
     <lastmod>2017-11-16T14:10:05.335Z</lastmod>
     <data>
@@ -16,21 +31,6 @@
         
         <tag>Test</tag>
          
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.torie.top/2017/11/09/My-First-Post-with-hexo/</loc>
-    <lastmod>2017-11-16T14:10:05.335Z</lastmod>
-    <data>
-        <display>
-        <title>My First Post with hexo</title>
-        <pubTime>2017-11-09T08:15:23.000Z</pubTime>
-        
          
            
         </display>
