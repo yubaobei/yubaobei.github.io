@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="#介绍装饰模式可以在不改变现有对象的情况下给对象添加新的功能。虽然继承也可以扩展类的功能，但是随着扩展功能的增多，子类越发“膨胀”，而且通过继承扩展的功能是静态的。使用装饰模式可以灵活的扩展类的功能。Java I/O中就使用到了装饰设计模式。什么时候使用装饰模式：1）扩展一个类的功能2)动态的增加功能，动态的撤销 #实">
+<meta name="description" content="介绍装饰模式可以在不改变现有对象的情况下给对象添加新的功能。虽然继承也可以扩展类的功能，但是随着扩展功能的增多，子类越发“膨胀”，而且通过继承扩展的功能是静态的。使用装饰模式可以灵活的扩展类的功能。Java I/O中就使用到了装饰设计模式。什么时候使用装饰模式：1）扩展一个类的功能2)动态的增加功能，动态的撤销 实现创">
 <meta name="keywords" content="decorator,设计模式">
 <meta property="og:type" content="article">
 <meta property="og:title" content="装饰设计模式">
 <meta property="og:url" content="http://www.torie.top/2019/03/18/decorator-pattern/index.html">
 <meta property="og:site_name" content="Smile&amp;Life">
-<meta property="og:description" content="#介绍装饰模式可以在不改变现有对象的情况下给对象添加新的功能。虽然继承也可以扩展类的功能，但是随着扩展功能的增多，子类越发“膨胀”，而且通过继承扩展的功能是静态的。使用装饰模式可以灵活的扩展类的功能。Java I/O中就使用到了装饰设计模式。什么时候使用装饰模式：1）扩展一个类的功能2)动态的增加功能，动态的撤销 #实现创建一个组件接口（规范被装饰的对象）123456789package deco">
+<meta property="og:description" content="介绍装饰模式可以在不改变现有对象的情况下给对象添加新的功能。虽然继承也可以扩展类的功能，但是随着扩展功能的增多，子类越发“膨胀”，而且通过继承扩展的功能是静态的。使用装饰模式可以灵活的扩展类的功能。Java I/O中就使用到了装饰设计模式。什么时候使用装饰模式：1）扩展一个类的功能2)动态的增加功能，动态的撤销 实现创建一个组件接口（规范被装饰的对象）123456789package decora">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-18T14:47:31.163Z">
+<meta property="og:updated_time" content="2019-03-18T14:54:11.488Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="装饰设计模式">
-<meta name="twitter:description" content="#介绍装饰模式可以在不改变现有对象的情况下给对象添加新的功能。虽然继承也可以扩展类的功能，但是随着扩展功能的增多，子类越发“膨胀”，而且通过继承扩展的功能是静态的。使用装饰模式可以灵活的扩展类的功能。Java I/O中就使用到了装饰设计模式。什么时候使用装饰模式：1）扩展一个类的功能2)动态的增加功能，动态的撤销 #实现创建一个组件接口（规范被装饰的对象）123456789package deco">
+<meta name="twitter:description" content="介绍装饰模式可以在不改变现有对象的情况下给对象添加新的功能。虽然继承也可以扩展类的功能，但是随着扩展功能的增多，子类越发“膨胀”，而且通过继承扩展的功能是静态的。使用装饰模式可以灵活的扩展类的功能。Java I/O中就使用到了装饰设计模式。什么时候使用装饰模式：1）扩展一个类的功能2)动态的增加功能，动态的撤销 实现创建一个组件接口（规范被装饰的对象）123456789package decora">
 
 
 
@@ -377,8 +377,8 @@
       
 
       
-        <p>#介绍<br>装饰模式可以在不改变现有对象的情况下给对象添加新的功能。虽然继承也可以扩展类的功能，但是随着扩展功能的增多，子类越发“膨胀”，而且通过继承扩展的功能是静态的。使用装饰模式可以灵活的扩展类的功能。Java I/O中就使用到了装饰设计模式。<br>什么时候使用装饰模式：<br>1）扩展一个类的功能<br>2)动态的增加功能，动态的撤销</p>
-<p>#实现<br>创建一个组件接口（规范被装饰的对象）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">package decorator;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 创建抽象接口，用来规范即将被增强功能的对象（如IO中的InputStream）</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">public interface Component &#123;</span><br><span class="line">    public void methordA();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>装饰模式可以在不改变现有对象的情况下给对象添加新的功能。虽然继承也可以扩展类的功能，但是随着扩展功能的增多，子类越发“膨胀”，而且通过继承扩展的功能是静态的。使用装饰模式可以灵活的扩展类的功能。Java I/O中就使用到了装饰设计模式。<br>什么时候使用装饰模式：<br>1）扩展一个类的功能<br>2)动态的增加功能，动态的撤销</p>
+<h1 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h1><p>创建一个组件接口（规范被装饰的对象）<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">package decorator;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 创建抽象接口，用来规范即将被增强功能的对象（如IO中的InputStream）</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">public interface Component &#123;</span><br><span class="line">    public void methordA();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>创建具体实现类<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">package decorator;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 具体被增强的类（如I/O中的FileIputStream）</span><br><span class="line"> */</span><br><span class="line"></span><br><span class="line">public class ConcreteComponent implements Component &#123;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void methordA() &#123;</span><br><span class="line">        System.out.println(&quot;Doing something with A&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>创建装饰器接口<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">package decorator;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 装饰器接口，实现了被装饰类的规范，且内部包含一个Component 实例（如I/O 中的FilterInputStream）</span><br><span class="line"> */</span><br><span class="line">public abstract class Decorator implements Component &#123;</span><br><span class="line">    private Component component;</span><br><span class="line"></span><br><span class="line">    public Decorator(Component component) &#123;</span><br><span class="line">        this.component = component;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void methordA() &#123;</span><br><span class="line">        this.component.methordA();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>创建具体装饰器实现类1<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">package decorator;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 具体装饰器实现类（如I/O中的BufferedInputStream）</span><br><span class="line"> */</span><br><span class="line">public class ConcreteDecoratorOne extends Decorator &#123;</span><br><span class="line">    public ConcreteDecoratorOne(Component component) &#123;</span><br><span class="line">        super(component);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void methordA() &#123;</span><br><span class="line">        super.methordA();</span><br><span class="line">        methordB();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void methordB() &#123;</span><br><span class="line">        System.out.println(&quot;Doing something with B&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -507,8 +507,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -580,6 +589,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#实现"><span class="nav-number">2.</span> <span class="nav-text">实现</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
