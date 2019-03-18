@@ -4,8 +4,27 @@
 
     
   <url>
+    <loc>http://www.torie.top/2019/03/18/decorator-pattern/</loc>
+    <lastmod>2019-03-18T14:38:11.933Z</lastmod>
+    <data>
+        <display>
+        <title>decorator pattern</title>
+        <pubTime>2019-03-18T13:00:35.000Z</pubTime>
+        
+        <tag>decorator</tag>
+         
+        <tag>装饰设计模式</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.torie.top/2018/02/22/Build-blog-with-hexo/</loc>
-    <lastmod>2018-02-23T04:07:19.036Z</lastmod>
+    <lastmod>2018-02-23T04:07:19.037Z</lastmod>
     <data>
         <display>
         <title>使用hexo快速搭建个人博客</title>
@@ -22,6 +41,21 @@
     
     
   <url>
+    <loc>http://www.torie.top/2017/11/09/My-First-Post-with-hexo/</loc>
+    <lastmod>2017-11-16T14:10:05.335Z</lastmod>
+    <data>
+        <display>
+        <title>My First Post with hexo</title>
+        <pubTime>2017-11-09T08:15:23.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://www.torie.top/2017/11/16/hello-world/</loc>
     <lastmod>2017-11-16T14:10:05.335Z</lastmod>
     <data>
@@ -31,21 +65,6 @@
         
         <tag>Test</tag>
          
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://www.torie.top/2017/11/09/My-First-Post-with-hexo/</loc>
-    <lastmod>2017-11-16T14:10:05.335Z</lastmod>
-    <data>
-        <display>
-        <title>My First Post with hexo</title>
-        <pubTime>2017-11-09T08:15:23.000Z</pubTime>
-        
          
            
         </display>
