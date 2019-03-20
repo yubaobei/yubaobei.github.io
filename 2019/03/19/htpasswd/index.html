@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="htpasswd,linux," />
 
 
 
@@ -81,13 +81,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Smile&amp;Life">
-<meta property="og:url" content="http://www.torie.top/archives/2019/03/index.html">
+<meta name="description" content="介绍最近公司项目中需要搭建内部docker registry,并且需要给registry添加basic authentication认证。查了一下docker官方文档， 需要给仓库配置一个htpasswd文件，并且加密算法必须是bcrypt（你牛好吧，哥妥协了）。于是去官方文档学习了下，并记录于此。htpasswd是有">
+<meta name="keywords" content="htpasswd,linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="htpasswd工具">
+<meta property="og:url" content="http://www.torie.top/2019/03/19/htpasswd/index.html">
 <meta property="og:site_name" content="Smile&amp;Life">
+<meta property="og:description" content="介绍最近公司项目中需要搭建内部docker registry,并且需要给registry添加basic authentication认证。查了一下docker官方文档， 需要给仓库配置一个htpasswd文件，并且加密算法必须是bcrypt（你牛好吧，哥妥协了）。于是去官方文档学习了下，并记录于此。htpasswd是有apache提供的用户名/密码存储工具。可以应用于Http中basic auth">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-03-20T13:49:55.159Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Smile&amp;Life">
+<meta name="twitter:title" content="htpasswd工具">
+<meta name="twitter:description" content="介绍最近公司项目中需要搭建内部docker registry,并且需要给registry添加basic authentication认证。查了一下docker官方文档， 需要给仓库配置一个htpasswd文件，并且加密算法必须是bcrypt（你牛好吧，哥妥协了）。于是去官方文档学习了下，并记录于此。htpasswd是有apache提供的用户名/密码存储工具。可以应用于Http中basic auth">
 
 
 
@@ -117,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://www.torie.top/archives/2019/03/"/>
+  <link rel="canonical" href="http://www.torie.top/2019/03/19/htpasswd/"/>
 
 
 
 
 
-  <title>归档 | Smile&Life</title>
+  <title>htpasswd工具 | Smile&Life</title>
   
 
 
@@ -142,7 +147,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -280,148 +285,227 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
+  <div id="posts" class="posts-expand">
+    
 
-      <span class="archive-page-counter">
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.torie.top/2019/03/19/htpasswd/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tao Wu">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Smile&Life">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">htpasswd工具</h1>
         
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-19T19:12:26+08:00">
+                2019-03-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-        
-        嗯..! 目前共计 6 篇日志。 继续努力。
-      </span>
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/linux/" itemprop="url" rel="index">
+                    <span itemprop="name">linux</span>
+                  </a>
+                </span>
 
-      
-
-        
-        
-        
-
-        
+                
+                
+              
+            </span>
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2019">2019</h1>
-          </div>
-        
-        
 
-        
+          
+            
+          
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+          
+          
+             <span id="/2019/03/19/htpasswd/" class="leancloud_visitors" data-flag-title="htpasswd工具">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/20/iterator/" itemprop="url">
-              
-                <span itemprop="name">迭代器模式</span>
-              
-            </a>
-        
-      </h2>
+          
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-20T21:48:42+08:00"
-              content="2019-03-20" >
-          03-20
-        </time>
-      </div>
+          
 
-    </header>
-  </article>
+          
 
+        </div>
+      </header>
+    
 
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/19/htpasswd/" itemprop="url">
-              
-                <span itemprop="name">htpasswd工具</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-19T19:12:26+08:00"
-              content="2019-03-19" >
-          03-19
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2019/03/18/decorator-pattern/" itemprop="url">
-              
-                <span itemprop="name">装饰设计模式</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2019-03-18T21:00:35+08:00"
-              content="2019-03-18" >
-          03-18
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>最近公司项目中需要搭建内部docker registry,并且需要给registry添加basic authentication认证。查了一下<a href="https://docs.docker.com/registry/configuration/#token" target="_blank" rel="noopener">docker官方文档</a>， 需要给仓库配置一个htpasswd文件，并且加密算法必须是bcrypt（你牛好吧，哥妥协了）。于是去官方文档学习了下，并记录于此。htpasswd是有apache提供的用户名/密码存储工具。可以应用于Http中basic authentication认证。详情资料请参考<a href="https://httpd.apache.org/docs/2.4/programs/htpasswd.html" target="_blank" rel="noopener">官网</a></p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="Redhat-CentOS"><a href="#Redhat-CentOS" class="headerlink" title="Redhat/CentOS"></a>Redhat/CentOS</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install httpd-tools -y</span><br></pre></td></tr></table></figure>
+<h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">apt-get install apache2-utils</span><br></pre></td></tr></table></figure>
+<h2 id="OpenSuse"><a href="#OpenSuse" class="headerlink" title="OpenSuse"></a>OpenSuse</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">zypper install apache2-utils</span><br></pre></td></tr></table></figure>
+<p>安装完成后， 执行 <code>htpasswd -h</code> , 出现如下信息即表示安装成功：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">Usage:</span><br><span class="line">	htpasswd [-cimBdpsDv] [-C cost] passwordfile username</span><br><span class="line">	htpasswd -b[cmBdpsDv] [-C cost] passwordfile username password</span><br><span class="line"></span><br><span class="line">	htpasswd -n[imBdps] [-C cost] username</span><br><span class="line">	htpasswd -nb[mBdps] [-C cost] username password</span><br><span class="line"> -c  Create a new file.</span><br><span class="line"> -n  Don&apos;t update file; display results on stdout.</span><br><span class="line"> -b  Use the password from the command line rather than prompting for it.</span><br><span class="line"> -i  Read password from stdin without verification (for script usage).</span><br><span class="line"> -m  Force MD5 encryption of the password (default).</span><br><span class="line"> -B  Force bcrypt encryption of the password (very secure).</span><br><span class="line"> -C  Set the computing time used for the bcrypt algorithm</span><br><span class="line">     (higher is more secure but slower, default: 5, valid: 4 to 31).</span><br><span class="line"> -d  Force CRYPT encryption of the password (8 chars max, insecure).</span><br><span class="line"> -s  Force SHA encryption of the password (insecure).</span><br><span class="line"> -p  Do not encrypt the password (plaintext, insecure).</span><br><span class="line"> -D  Delete the specified user.</span><br><span class="line"> -v  Verify password for the specified user.</span><br><span class="line">On other systems than Windows and NetWare the &apos;-p&apos; flag will probably not work.</span><br><span class="line">The SHA algorithm does not use a salt and is less secure than the MD5 algorithm.</span><br></pre></td></tr></table></figure>
+<h1 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h1><p>-c: 创建一个htpasswd文件<br>-n: 仅将结果输出到控制台，并不更新文件<br>-m: 默认选项，采用MD5算法加密密码<br>-s: 采用SHA算法加密<br>-d: 采用CRYPT算法加密<br>-B: 采用bcrypt算法加密（较安全）<br>-C: 采用bcrypt算法时，使用该选项设置计算时间参数（默认是5，参数范围4-31，时间越长，安全系数越高）<br>-b: 直接从命令行处接收密码而不用根据提示输入密码<br>-i: 从标准输入读取密码(用于shell脚本)<br>-p: 不加密密码，明文保存<br>-D: 删除指定用户<br>-v: 验证用户，根据提示输入密码并校验</p>
+<h1 id="用例"><a href="#用例" class="headerlink" title="用例"></a>用例</h1><h2 id="创建用户名密码"><a href="#创建用户名密码" class="headerlink" title="创建用户名密码"></a>创建用户名密码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 使用默认算法（MD5）加密</span><br><span class="line">htpasswd -cb /tmp/mypasswd admin Admin@111</span><br><span class="line">Adding password for user admin</span><br><span class="line"></span><br><span class="line">cat mypasswd </span><br><span class="line">admin:$apr1$3NDVvhgM$bZMav87W9xWahv5vb7oIt0</span><br><span class="line"></span><br><span class="line"># 使用bcrypt加密</span><br><span class="line">htpasswd -cbB /tmp/mypasswd1 admin Admin@111</span><br><span class="line"></span><br><span class="line">cat mypasswd1</span><br><span class="line">admin:$2y$05$QdU2Jw1gOwYR1f/MYBjf2.q4bP6nos1sltfpts8LndilJc2y.aY7i</span><br></pre></td></tr></table></figure>
+<h2 id="新增用户名密码"><a href="#新增用户名密码" class="headerlink" title="新增用户名密码"></a>新增用户名密码</h2><p>在原来的htpasswd文件里添加新的用户</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 在刚才创建的mypasswd文件中新增一个super-admin用户</span><br><span class="line">htpasswd -b /tmp/mypasswd super-admin Admin@222</span><br><span class="line"></span><br><span class="line">cat mypasswd</span><br><span class="line">admin:$apr1$3NDVvhgM$bZMav87W9xWahv5vb7oIt0</span><br><span class="line">super-admin:$apr1$whQCl5w.$QSLkUOX/izGCj/T4S5UFZ1</span><br></pre></td></tr></table></figure>
+<h2 id="删除用户"><a href="#删除用户" class="headerlink" title="删除用户"></a>删除用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 删除mypasswd中admin用户</span><br><span class="line">htpasswd -D /tmp/mypasswd admin</span><br><span class="line"></span><br><span class="line">cat mypasswd</span><br><span class="line">super-admin:$apr1$whQCl5w.$QSLkUOX/izGCj/T4S5UFZ1</span><br></pre></td></tr></table></figure>
+<h2 id="更新用户密码"><a href="#更新用户密码" class="headerlink" title="更新用户密码"></a>更新用户密码</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 更新super-admin用户的密码为Admin@333</span><br><span class="line">htpasswd -b /tmp/mypasswd super-admin Admin@333</span><br><span class="line"></span><br><span class="line">cat mypasswd</span><br><span class="line">super-admin:$apr1$lqDD6sqf$TwLC/JHk8iJ0.q/s8syz4/</span><br></pre></td></tr></table></figure>
+<h2 id="校验用户"><a href="#校验用户" class="headerlink" title="校验用户"></a>校验用户</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 验证密码 （按提示输入密码Admin@333）</span><br><span class="line">htpasswd -v mypasswd super-admin</span><br><span class="line">Enter password: </span><br><span class="line">Password for user super-admin correct.</span><br></pre></td></tr></table></figure>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="Tao Wu 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="Tao Wu 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/htpasswd/" rel="tag"># htpasswd</a>
+          
+            <a href="/tags/linux/" rel="tag"># linux</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/03/18/decorator-pattern/" rel="next" title="装饰设计模式">
+                <i class="fa fa-chevron-left"></i> 装饰设计模式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/20/iterator/" rel="prev" title="迭代器模式">
+                迭代器模式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -429,6 +513,12 @@
 
 
           
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zMTg1My84NDE3"></div>
+    </div>
+  
+
 
         </div>
         
@@ -449,8 +539,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -531,6 +630,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#介绍"><span class="nav-number">1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">2.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Redhat-CentOS"><span class="nav-number">2.1.</span> <span class="nav-text">Redhat/CentOS</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Ubuntu"><span class="nav-number">2.2.</span> <span class="nav-text">Ubuntu</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OpenSuse"><span class="nav-number">2.3.</span> <span class="nav-text">OpenSuse</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参数说明"><span class="nav-number">3.</span> <span class="nav-text">参数说明</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#用例"><span class="nav-number">4.</span> <span class="nav-text">用例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建用户名密码"><span class="nav-number">4.1.</span> <span class="nav-text">创建用户名密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新增用户名密码"><span class="nav-number">4.2.</span> <span class="nav-text">新增用户名密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除用户"><span class="nav-number">4.3.</span> <span class="nav-text">删除用户</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新用户密码"><span class="nav-number">4.4.</span> <span class="nav-text">更新用户密码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#校验用户"><span class="nav-number">4.5.</span> <span class="nav-text">校验用户</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -662,6 +777,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
@@ -690,6 +809,17 @@
 
 
 
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
   
 
 

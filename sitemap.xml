@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.torie.top/2019/03/20/iterator/</loc>
+    
+    <lastmod>2019-03-20T14:31:54.697Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.torie.top/categories/index.html</loc>
+    
+    <lastmod>2019-03-20T13:49:55.168Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.torie.top/2019/03/19/htpasswd/</loc>
+    
+    <lastmod>2019-03-20T13:49:55.159Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.torie.top/2019/03/18/decorator-pattern/</loc>
     
-    <lastmod>2019-03-18T14:54:11.488Z</lastmod>
+    <lastmod>2019-03-20T13:49:55.151Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://www.torie.top/2018/02/22/Build-blog-with-hexo/</loc>
     
-    <lastmod>2018-02-23T04:07:19.037Z</lastmod>
+    <lastmod>2019-03-20T13:49:55.135Z</lastmod>
     
   </url>
   
@@ -19,13 +40,6 @@
     <loc>http://www.torie.top/tags/index.html</loc>
     
     <lastmod>2017-11-16T14:10:05.338Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.torie.top/categories/index.html</loc>
-    
-    <lastmod>2017-11-16T14:10:05.337Z</lastmod>
     
   </url>
   
